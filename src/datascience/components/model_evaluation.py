@@ -12,10 +12,10 @@ from src.datascience.entity.config_entity import ModelEvaluationConfig
 from src.datascience.constants import *
 from src.datascience.utils.common import read_yaml, create_directories,save_json
 
-#import os
-#os.environ["MLFLOW_TRACKING_URI"]=
-#os.environ["MLFLOW_TRACKING_USERNAME"]=
-#os.environ["MLFLOW_TRACKING_PASSWORD"]=
+
+os.environ["MLFLOW_TRACKING_URI"]= "https://dagshub.com/deepakdeokar1250/DataScienceProject.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]= "deepakdeokar1250"
+os.environ["MLFLOW_TRACKING_PASSWORD"]= "245666402410746f0bf4ac3b6b73e00875bedd64"
 
 
 class ModelEvaluation:
@@ -59,12 +59,7 @@ class ModelEvaluation:
 
             # Model registry does not work with file store
             if tracking_url_type_store != "file":
-
-                # Register the model
-                # There are other ways to use the Model Registry, which depends on the use case,
-                # please refer to the doc for more information:
-                # https://mlflow.org/docs/latest/model-registry.html#api-workflow
+                
                 mlflow.sklearn.log_model(model, "model", registered_model_name="ElasticnetModel")
             else:
                 mlflow.sklearn.log_model(model, "model")
-    

@@ -14,6 +14,10 @@ class DataValiadtion:
             validation_status = None
 
             data = pd.read_csv(self.config.unzip_data_dir)
+            
+            if 'Id' in data.columns:
+                data = data.drop('Id', axis=1)
+
             all_cols = list(data.columns)
 
             all_schema = self.config.all_schema.keys()
