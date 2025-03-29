@@ -55,9 +55,11 @@ Before starting, ensure that you have **Python 3.x** installed and the following
 ### Installing Dependencies
 
 1. Clone the repository:
-    git clone https://github.com/your-username/wine-quality-prediction.git
+    ```bash
+    git clone https://github.com/deepak-deokar/DataScienceProject.git
 
 2. Install required dependencies:
+    ```bash
     pip install -r requirements.txt
 
 
