@@ -1,2 +1,31 @@
-<h1>{{prediction}} </h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wine Quality Prediction Results</title>
+
+        <!-- Link to the CSS file -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="results-page">
+                <div class="results-content">
+                    <h2>Your Wine Quality Prediction</h2>
+                    <div class="prediction">
+                        <h1>{{ prediction }}</h1>
+                    </div>
+                    <div class="back-button">
+                        <a href="/" class="back-link">Go Back to Form</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+
 

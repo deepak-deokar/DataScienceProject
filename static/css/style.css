@@ -1,0 +1,185 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Full Page Container */
+.page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('static/assets/img/form-v9.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Form container styling */
+.form-v9-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading styling */
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Form row styling (two inputs per row) */
+.form-row-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    width: 48%; /* Each input will take 48% of the available width */
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-text {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-text:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit button styling */
+.register {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.register:hover {
+    background-color: #0056b3;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .form-row-total {
+        flex-direction: column; /* Stack the form fields vertically */
+    }
+    .form-row {
+        width: 100%; /* Make inputs take full width */
+    }
+}
+
+/* Padding for the outer container */
+.container {
+    padding: 20px;
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* RESULT PAGE */
+/* ------------------------------------------------------------------------------------------- */
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Results Page Container */
+.results-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Styling for results content */
+.results-content {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Heading for results */
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Displaying the prediction result */
+.prediction h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #28a745; /* Green color for positive result */
+    margin: 20px 0;
+}
+
+/* Back Button Styling */
+.back-button {
+    margin-top: 30px;
+}
+
+.back-link {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+}
+
+.back-link:active {
+    background-color: #003c8f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .results-content {
+        padding: 20px;
+    }
+    .prediction h1 {
+        font-size: 36px;
+    }
+}
